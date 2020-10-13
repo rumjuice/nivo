@@ -19,7 +19,7 @@ import { AxisProps, GridValues } from '@nivo/axes'
 import { OrdinalColorsInstruction, InheritedColorProp } from '@nivo/colors'
 import { LegendProps } from '@nivo/legends'
 
-declare module '@nivo/bar' {
+declare module '@rumjuice/nivo-bar' {
     export type Value = string | number
 
     export interface Data {
@@ -56,7 +56,7 @@ declare module '@nivo/bar' {
         event: React.MouseEvent<T>
     ) => void
 
-    export type TooltipProp = React.StatelessComponent<BarExtendedDatum>
+    export type TooltipProp = React.FunctionComponent<BarExtendedDatum>
 
     export interface BarItemProps {
         data: {
@@ -109,7 +109,7 @@ declare module '@nivo/bar' {
         enableGridY: boolean
         gridYValues: GridValues<Value>
 
-        barComponent: React.StatelessComponent<BarItemProps>
+        barComponent: React.FunctionComponent<BarItemProps>
 
         enableLabel: boolean
         label: string | AccessorFunc

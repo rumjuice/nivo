@@ -1,6 +1,12 @@
-# `@nivo/bar`
+# `@rumjuice/nivo-bar`
 
-[![version](https://img.shields.io/npm/v/@nivo/bar.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/bar)
+Forked from `@nivo/bar`
+
+[![version](https://img.shields.io/npm/v/@nivo/bar.svg?style=flat-square)](https://www.npmjs.com/package/@rumjuice/nivo-bar)
+
+## Changes
+
+-   Add support to render label even if the value is 0
 
 ## Bar
 
